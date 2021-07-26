@@ -1,0 +1,33 @@
+=> In order to call instant methods[which one don't have static keyword]
+	we should create object for class.
+	
+	
+	Object Creation Syntax:-->
+	
+			ClassName obj=new ClassName();
+			obj.methodname();
+			obj.varaiblename();
+			
+			
+			Note:-->No need to call constructor repeatedly for
+					individual method to all. Constructor can be
+					stored into reference and we can call all
+					methods and variables with help of reference only
+			
+			
+			
+		=>Calling method without variable reference
+			
+			
+			new Classname().methodname();
+			new Classname().variablename();
+			
+			
+			Note:--> When user need to call single method or variable
+					 we can call instantly without create reference
+			
+			
+			
+			
+			
+			

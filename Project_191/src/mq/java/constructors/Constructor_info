@@ -1,0 +1,35 @@
+Constructor:-->
+		=> Constructor is a initializer to access class methods and variable
+		=> Every public class contains one hidden Constructor
+		=> User can define constructor manually 
+		=> Constructor name should match with class name
+		=> Constructor does't return value where as method return value
+		=> Constructor accept parameters same as methods
+		=> Each class can have more than one Constructor
+		
+		
+		
+		
+	
+		
+		=> Constructor at Hidden State
+		
+				public class TestA
+				{
+					//Assume there is always one hidden constructor available with in public class
+				
+				}
+				
+				
+		=> Constructor at visible State
+		
+				public class TestB
+				{
+					
+					public TestB()
+					{
+					
+					
+					}
+				
+				}

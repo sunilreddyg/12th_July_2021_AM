@@ -1,0 +1,22 @@
+Methods are categorized into two types
+		
+			1. Void methods
+			2. Otherthan void methods
+					[Datatypes, Arrays, Collections, Interfaces,classes ---etc]
+					
+					
+					
+		Void methods:-->
+				When user call void method it execute all statements under
+				method and doesn't allow to share information outside method..
+				
+				
+				
+		OtherThan void types:-->
+		
+				=> For otherthan void type we should write return keyword
+						at the end of method.
+				=> Return value should match with method type
+				=> Finally return value to methodname
+		
+				
