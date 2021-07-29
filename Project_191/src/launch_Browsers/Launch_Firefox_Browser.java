@@ -19,6 +19,9 @@ public class Launch_Firefox_Browser {
 		System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 		FirefoxDriver firefox=new FirefoxDriver();
 		firefox.get("http://makemytrip.com");
+		firefox.manage().window().maximize();
+		
+		
 		
 		System.out.println(firefox.getTitle());
 
