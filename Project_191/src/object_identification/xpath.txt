@@ -74,7 +74,8 @@ Example:--> Target Element with partial attribute properites
 
 Manual Browser session:-->
 			id="email_987fsdlsjlksdjflsdjf"
-Automation browser session:-->
+			
+Automation browser session:-->   [id property is partially changed ]
 			id="email_jflsdsdoijflksdjlsd"
 
 
@@ -97,6 +98,31 @@ To Recognize object with multiple attributes
 			 
 		//*[@prop='pvalue' and (@prop='pvalue' or  @prop='pvalue')]
 		//*[@prop='pvalue' or (@prop='pvalue' and  @prop='pvalue')]
+	       		
+	       		
+==========================================================================
+Xpath Duplicatoin Syntax:-->
+
+
+	<html>
+		<body>
+			<div id="reg_container"  class="form">
+				<input id="email" type="text"></input>   
+			</div>
+
+			<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>  ------>>>>TargetElement
+			</div>
+		</body>
+	</html>
+	
+	       		
+	       	
+	       	Sytnax:-->
+	       				(Xpath Expression)[int position]
+	       		
+	       		
+	       				(//input[@id='email'])[2]
 	       		
 ===================================================================..
 Example:-->  Target Element with parent Node.
