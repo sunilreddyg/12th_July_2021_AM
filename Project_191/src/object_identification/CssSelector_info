@@ -116,6 +116,9 @@ CssAttribute syntax:-->
 		
 		=> We can also use * instead of tagname
 		By.cssSelector("*[id='Sbtn']")
+		
+		=> We can alos use without tagname
+		By.cssSelector("[id='Sbtn']")
 
 Other than id unique attributes followed by developers.:-->
 		Name
@@ -220,6 +223,9 @@ Syntax:-->
 		By.cssSelector("div[id='login_conainer'] input")
 		By.cssSelector("div[id='login_container'] > div[class='demo'] > input")
 		
+		Note:--> Here space operator identifying it decendants without giving
+				 all parent positions.
+		
 ===============================================================================
 HtmlSource:--> Identify Required node with help of sibling node..
 
@@ -233,40 +239,3 @@ HtmlSource:--> Identify Required node with help of sibling node..
 		By.cssSelector("label[id='email-login'] ~ input")
 		
 ================================================================================
-Recognized object with Sibling Refernce:-->
-
-		+  and ~  symbols identify following sibling objects with in cssSelector
-
-
-HtmlSource:-->
-
-<div  id="Container">
-	<input id="MID" type="text">
-	<div class="abc"></div> -------------------------------------> Target this location
-</div>
-
-IDentifying child object with parent reference:-->
-
-		div[id='Container'] > div.abc
-
-
-
-Identifying sibling object using elder sibling refernce:-->
-
-
-		input[id='MID'] + div.abc
-		input[id='MID'] ~ div.abc
-
--------------------------------------------------------------
-Recognize object with Sibling reference:-->
-
-
-<div  id="Container">
-	<input id="MID" type="text">
-	<selector  class="xyz" ></selector>
-	<div class="abc"></div> -------------------------------------> Target this location
-</div>
-
-
-		input[id='MID'] + selector.xyz  + div
-		input[id='MID'] ~ selector.xyz  ~ div
