@@ -1,0 +1,61 @@
+
+
+
+
+
+HtmlSource:-->
+
+	<div id="Sbtn" class="account type"  data-id="200">  Create Account Here </div>
+
+
+=> Identifying with unique attributes:-->
+
+		Syntax:-->
+				//tagname[@propertyname='PropertyValue']
+
+		XpathSelector:-->
+
+				driver.findElement(By.xpath("//div[@id='Sbtn']"));
+
+
+=> IDentifying with multiple attributes:-->
+
+		Syntax:-->
+				//tagname[@prop='Propvalue'][@propname='propvalue']
+
+		XpathSelector:-->
+
+				driver.findElement(By.xpath("//div[@id='Sbtn'][@class='acccoun type']"));
+
+=> Identifying with text location:-->
+
+		Syntax:-->
+				//tagname[.='Element Text']
+				//tagname[text()='Element Text']
+
+		XpathSelector:-->
+				driver.findElement(By.xpath("//div[.='Create Account Here']"));
+				driver.findElement(By.xpath("//div[@id='Sbtn'][.='Create Account Here']"));
+
+=> Identying with partial attribute and partial text:-->
+
+		Syntax:-->
+				//tagname[contains(@propname,'partial prop value')]
+				//tagname[contains(.,'partial element text')]
+
+		XpathSelector:-->
+				driver.findElement(By.xpath("//tagname[contains(@class,'Account')]"));
+				driver.findElement(By.xpath("//tagname[contains(.,'Create Account Here')]"));
+
+
+				
+
+
+
+
+
+
+
+
+
+

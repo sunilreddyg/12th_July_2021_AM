@@ -27,7 +27,7 @@ public class Variable_Declaration {
 		
 
 		/*
-		 * Valid Declaration:--->
+		 * InValid Declaration:--->
 		 * 
 		 * 		Starts with number					int 1a=100;
 		 * 		Special Characters					int @abc=200;

@@ -137,13 +137,14 @@ HtmlSource:-->
 		parentnode  / childnode...
 
 		By.xpath("//div[@id='login_conainer']/input")
+		
+		
+		Note:--> After Relative object identification a single forward
+				slash identify child object under parent object.
 
 =====================================================================
 		
-		
-		
-		
-		
+	
 		
 		
 		
