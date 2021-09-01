@@ -16,7 +16,7 @@ public class Type_Text_into_NotePad_File {
 		
 		//Create object for robot class
 		Robot robot=new Robot();
-		robot.setAutoDelay(200);
+		robot.setAutoDelay(200);    //It delay action for each every keyboard and mouse action
 		
 		
 		robot.keyPress(KeyEvent.VK_SHIFT);
