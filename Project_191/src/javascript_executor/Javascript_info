@@ -18,3 +18,27 @@ When to use javascript:-->
 		 *  Most times when troubleshooting failure it's 
 		 *  best to view the browser's console after 
 		 *  executing the WebDriver request.
+		 
+		 
+Asychronized script:-->
+
+		Example #1: Performing a sleep in the browser under test.
+
+
+   				long start = System.currentTimeMillis();
+   				((JavascriptExecutor) driver).executeAsyncScript(
+       			"window.setTimeout(arguments[arguments.length - 1], 500);");
+   				System.out.println(
+       					"Elapsed time: " + System.currentTimeMillis() - start);
+ 
+Example #2: Synchronizing a test with an AJAX application:
+
+
+   WebElement composeButton = driver.findElement(By.id("compose-button"));
+   composeButton.click();
+   
+   ((JavascriptExecutor) driver).executeAsyncScript(
+       "var callback = arguments[arguments.length - 1];" +
+       "mailClient.getComposeWindowWidget().onload(callback);");
+   driver.switchTo().frame("composeWidget");
+   driver.findElement(By.id("to")).sendKeys("bog@example.com");
