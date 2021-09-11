@@ -22,7 +22,7 @@ public class Wait_For_ElementTobe_visible {
 		driver.manage().window().maximize();// TODO Auto-generated method stub
 		
 		//Hide email object for webpage
-		//((JavascriptExecutor)driver).executeScript("document.getElementById('email').setAttribute('style','display:none')");
+		((JavascriptExecutor)driver).executeScript("document.getElementById('email').setAttribute('style','display:none')");
 		System.out.println("Email object is hidden");
 		
 		try {
