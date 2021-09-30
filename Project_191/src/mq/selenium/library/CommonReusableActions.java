@@ -121,7 +121,7 @@ public class CommonReusableActions
 	 
 	 
 	 /*
-	 * KeyWord:--> This keyword Manage timeout until expected visible
+	 * KeyWord:--> This keyword Manage timeout until expected object visible at webpage
 	 * Author:--> SunilReddy
 	 * Parameters Used:-->  Local Parameter
 	 */
