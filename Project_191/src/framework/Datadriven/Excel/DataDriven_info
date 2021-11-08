@@ -1,0 +1,14 @@
+
+	DataDriven Framework:-->
+		Data driven framework separate test data from testcases and maintain test data in different
+		spread sheets like [Propertyfiles, Excel, CsvFiles, Notepad, Json, Xml, PDf ---etc].
+
+		
+
+		Why datadriven is a framework:-->
+			=> Because we organize different set of intput data to testcases without hardcoding it
+
+		Advantages of DataDriven:-->
+			=> Any non technical person can update data without disturbing code
+			=> Redule line of code because spread sheets allow multiple set of data to drive on testcase
+			=> Data Reusability , Easy to maintain, Flexible  --etc
